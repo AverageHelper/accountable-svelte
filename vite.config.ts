@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import { svelte } from "@sveltejs/vite-plugin-svelte";
 import { visualizer } from "rollup-plugin-visualizer";
 import analyze from "rollup-plugin-analyzer";
-import autoprefixer from "autoprefixer";
 import path from "node:path";
 import sveltePreprocess from "svelte-preprocess";
 import tsconfigPaths from "vite-tsconfig-paths";
@@ -66,22 +65,7 @@ export default defineConfig({
 			"~bootstrap": "bootstrap",
 		},
 	},
-	css: {
-		postcss: {
-			plugins: [
-				autoprefixer(),
-				{
-					// Fixes a benign error about charset being improperly placed
-					postcssPlugin: "internal:charset-removal",
-					AtRule: {
-						charset: (atRule): void => {
-							if (atRule.name === "charset") {
-								atRule.remove();
-							}
-						},
-					},
-				},
-			],
-		},
-	},
+	// css: {
+	// 	postcss:  // Vite automatically checks postcss.config.* for this config
+	// },
 });

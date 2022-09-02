@@ -5,6 +5,16 @@
 		"noEmit": false,
 		"types": ["vite/client", "svelte", "jest", "jest-extended"]
 	},
-	"include": ["src/**/*"],
-	"exclude": ["node_modules/*", "__sapper__/*", "public/*", "**/__mocks__/**/*.ts", "./server/**"]
+	"ts-node": {
+		"esm": true
+	},
+	"include": ["src/**/*", "*.svelte"],
+	"exclude": [
+		"node_modules/*",
+		"__sapper__/*",
+		"public/*",
+		"**/*.test.ts",
+		"**/__mocks__/**/*.ts",
+		"./server/**"
+	]
 }

@@ -4,5 +4,19 @@
 		"declaration": false,
 		"types": ["svelte"]
 	},
-	"exclude": ["./*.ts", "**/*.test.ts"]
+	"ts-node": {
+		"esm": true
+	},
+	"exclude": [
+		"./src/**/*.stories.*",
+		"**/*.mdx",
+		"**/*.test.*",
+		"node_modules/*",
+		"__sapper__/*",
+		"public/*",
+		"./*.ts",
+		"**/*.test.ts",
+		"**/__mocks__/**/*.ts",
+		"./server/**"
+	]
 }

@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Added
+- Use [Storybook](https://storybook.js.org) for UI testing.
+
 ## [0.11.0] - 2022-09-01
 ### Changed
 - BREAKING: The server now requires the `DB` environment variable to be set.
@@ -26,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - More user-facing strings refactored into i18n keys. I think I found all of the user-facing strings reasonably enough now, though testing and experience will tell for sure if I missed anything.
 - The hamburger menu closes when the user selects a language.
 - Improved the cookie disclaimer.
+- Use [Storybook](https://storybook.js.org) for UI testing.
 
 ## [0.10.1] - 2022-08-05
 ### Fixed
@@ -249,7 +254,7 @@ Just some re-working to make our vendor bundle fit within the recommended 500 Ki
 ### Added
 - Initial commit
 
-[Unreleased]: https://github.com/AverageHelper/accountable-svelte/compare/v0.11.0...HEAD
+[Unreleased]: https://github.com/AverageHelper/accountable-svelte/compare/v0.11.1...HEAD
 [0.11.0]: https://github.com/AverageHelper/accountable-svelte/compare/v0.10.2...v0.11.0
 [0.10.2]: https://github.com/AverageHelper/accountable-svelte/compare/v0.10.1...v0.10.2
 [0.10.1]: https://github.com/AverageHelper/accountable-svelte/compare/v0.10.0...v0.10.1
